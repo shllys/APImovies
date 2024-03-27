@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <video
+        src="./content/kung-fu-panda.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+
+      <nav>
+        <div class="logo">
+          <div class="icon-link">
+            <img src="./content/tv.png" width="30px" alt="" />
+            <h1 class="title_Page">MovieApi</h1>
+
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">recommended</a>
+              </li>
+              <li>
+                <a href="#">series</a>
+              </li>
+              <li>
+                <a href="#">Kids</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="search-bar">
+            <input type="text" placeholder="search..." class="buscador" />
+            <img
+              class="search"
+              src="./content/search-01-stroke-rounded.svg"
+              alt=""
+            />
+            <img class="user" src="./content/user-stroke-rounded.svg" alt="" />
+          </div>
+
+          <div class="search-list">
+            <!-- <a href="#" class="card-list">
+              <img src="./content/peli-it.jpeg" alt="" />
+              <div class="cont">
+                <h3>Movie IT</h3>
+                <p>Terror/Mystery 2017</p>
+              </div>
+            </a> -->
+          </div>
+        </div>
+      </nav>
+
+      <div class="content">
+        <h1 class="title">Money Heist</h1>
+        <p class="description">Una banda organizada de ladrones se propone cometer el atraco del siglo en la Fábrica Nacional de Moneda y Timbre.</p>
+        <div class="details">
+          <h6>A Netflix Original</h6>
+          <h5 class="gen">Comedia/Aventura</h5>
+          <h4 class="fecha">2022</h4>
+        </div>
+        <div class="btns">
+          <a href="#" id="play">Watch<ion-icon name="play-outline"></ion-icon></a>
+          <a href="#" id="download_main"><ion-icon name="cloud-download-outline"></ion-icon></a>
+        </div>
+      </div>
+
+      <section>
+        <h4>Popular</h4>
+        <ion-icon class="left" name="chevron-back-outline"></ion-icon>
+        <ion-icon class="right"  name="chevron-forward-outline"></ion-icon>
+        <div class="cards">
+          <!-- <a href="#" class="card">
+            <img class="poster" src="./content/kunfu_2.png" alt="">
+            <div class="rest_card">
+              <img src="./content/kunfumovie.jpg" alt="">
+              <div class="cont">
+                <h4>Kung-fu-Panda</h4>
+                <div class="sub">
+                  <p>Action, 2024</p>
+                </div>
+              </div>
+            </div>
+          </a> -->
+        </div>
+      </section>
+    </header>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
