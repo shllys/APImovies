@@ -2,6 +2,8 @@
 const left_btn = document.querySelector(".left");
 const right_btn = document.querySelector(".right");
 const cards = document.querySelector(".cards");
+const search = document.querySelector('.search_list');
+const search_input = document.querySelector('.buscador');
 
 left_btn.addEventListener("click", () => {
   cards.scrollLeft -= 140;
@@ -48,7 +50,7 @@ async function getMovies() {
       let cont_search = ""
       data.results.forEach((search) => {
         cont_search += `
-          <a href="#" class="card-list">
+          <a href="#" class="card_list">
               <img src="https://image.tmdb.org/t/p/w500/${search.poster_path}" alt="" />
               <div class="cont">
                 <h3>${search.title}</h3>
@@ -56,11 +58,30 @@ async function getMovies() {
               </div>
             </a>
           `;
-          const list = document.querySelector('.search-list').innerHTML = cont_search;
+          document.querySelector('.search_list').innerHTML = cont_search;
       });
 
       // Función de búsqueda
-      
+      search_input.addEventListener('keyup', () =>{
+        let filter = search_input.value.toUpperCase();
+        let a = search.getElementsByTagName('a');
+
+        for(let index = 0; index < a.length; index++) {
+          let b = a[index].getElementsByClassName('cont')[0];
+          let textValue = b.textContent || b.innerText;
+          if (textValue.toUpperCase().indexOf(filter) > -1 ) {
+            a[index].style.display = "flex";
+            search.style.visibility = 'visible';
+            search.style.opacity = 1;
+          } else {
+            a[index].style.display = "none";
+          }
+          if (search_input.value == "") {
+            search.style.visibility= "hidden";
+            search.style.opacity = 0;
+          }
+        }
+      })
 
     }
 

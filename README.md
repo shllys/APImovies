@@ -8,7 +8,7 @@ Un proyecto de practica, donde se usa Api para llamar películas con sus detalle
 **Herramientas**
 
 <div style="display:flex">
-    <img style="width: 30px;" src="./icons/logo-html5.svg" alt="HTML" />
-    <img style="width: 30px;" src="./icons/logo-css3.svg" alt="CSS" />
-    <img style="width: 30px;" src="./icons/logo-javascript.svg" alt="JS" />
+    <img style="width: 30px;" src="./content/logo-html5.svg" alt="HTML" />
+    <img style="width: 30px;" src="./content/logo-css3.svg" alt="CSS" />
+    <img style="width: 30px;" src="./content/logo-javascript.svg" alt="JS" />
 </div
