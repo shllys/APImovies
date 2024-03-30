@@ -178,12 +178,12 @@ header nav ul li a {
     border-radius: 2px;
     margin-left: 8px;
 }
-.cont {
+.cont_list {
     margin-left: 20px;
     color: #fff;
     font-size: .8rem;
 }
-.cont p {
+.cont_list p {
     color: #ddd9;
 }
 
@@ -309,7 +309,7 @@ header section {
     margin-left: 0;
 }
 
-.card:hover {
+.rest_card:hover {
     width: 200px;
     overflow: hidden;
 }

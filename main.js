@@ -32,7 +32,7 @@ async function getMovies() {
               <div class="cont">
                 <h4>${movie.title}</h4>
                 <div class="sub">
-                  <p>${movie.genre_ids}, ${movie.release_date}</p>
+                  <p>${movie.release_date}</p>
                 </div>
               </div>
             </div>
@@ -52,7 +52,7 @@ async function getMovies() {
         cont_search += `
           <a href="#" class="card_list">
               <img src="https://image.tmdb.org/t/p/w500/${search.poster_path}" alt="" />
-              <div class="cont">
+              <div class="cont_list">
                 <h3>${search.title}</h3>
                 <p>${search.release_date}</p>
               </div>
@@ -67,7 +67,7 @@ async function getMovies() {
         let a = search.getElementsByTagName('a');
 
         for(let index = 0; index < a.length; index++) {
-          let b = a[index].getElementsByClassName('cont')[0];
+          let b = a[index].getElementsByClassName('cont_list')[0];
           let textValue = b.textContent || b.innerText;
           if (textValue.toUpperCase().indexOf(filter) > -1 ) {
             a[index].style.display = "flex";
